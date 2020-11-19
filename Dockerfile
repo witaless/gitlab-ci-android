@@ -53,6 +53,5 @@ RUN while read -r package; do PACKAGES="${PACKAGES}${package} "; done < /sdk/pac
 # install Fastlane
 COPY Gemfile.lock .
 COPY Gemfile .
-RUN gem install bundle
-RUN bundle update --bundler
+RUN gem install bundler:1.17.2
 RUN bundle install
