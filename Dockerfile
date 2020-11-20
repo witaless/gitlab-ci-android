@@ -5,9 +5,6 @@ RUN apt-get update -y && apt-get install -y \
     make \
     gcc \
     g++ \
-    qemu-kvm  \
-    libvirt-bin \
-    ubuntu-vm-builder  \
     bridge-utils
 RUN gem install fastlane -NV
 RUN echo "gem \"fastlane\"" > Gemfile
